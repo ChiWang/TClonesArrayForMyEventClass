@@ -1,0 +1,23 @@
+'''
+ *  $Id: Event.scons, 2014-02-22 16:18:47 chi $
+ *  Author(s):
+ *    Chi WANG (chiwang@mail.ustc.edu.cn) 22/02/2014
+'''
+
+import os
+Import("*")     # import all vars from SConstruct
+print "\t\t\t invoke %s\n" % os.path.abspath("./")
+#--------------------------------------------------------------------
+
+target='TestDmpEvent'
+env = envBase.Clone()
+
+# include
+env.Prepend(CPPPATH="./include")
+
+# main build
+#--------------------------------------------------------------------
+goal=env.SharedLibrary(target,Glob('./src/*.cc'))
+#Default(env.InstallAs(prefix+"/lib/lib"+target+".so",goal))
+
+

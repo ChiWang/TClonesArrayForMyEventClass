@@ -1,0 +1,3 @@
+
+SConscript('./src/SConscript',variant_dir='Scons',duplicate=0)
+
