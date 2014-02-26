@@ -1,7 +1,7 @@
 #TClonesArrayForMyEventClass
 ===========================
 
-#Write MyEventClass and use TClonesArray to book branch in root
+Write MyEventClass and use TClonesArray to book branch in root
 >-------------------------------------------------------------------
 
 Once you develope the event class this way,
